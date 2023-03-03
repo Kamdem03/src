@@ -7,7 +7,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="dashoard.php" method="post">
+    <form action="../src/dashoard.php" method="post">
 
         Name: <input type="text" name="name" placeholder="Name" > <br><br>
         Password: <input type="text" name="pwd" placeholder="Password"><br><br>

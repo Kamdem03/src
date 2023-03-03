@@ -7,7 +7,7 @@
     <title>Landing Page</title>
 </head>
 <body>
-    <a href="login.php">Login</a> 
-    <a href="register.php">Register</a>
+    <a href="../src/forms/login.php">Login</a> 
+    <a href="../src/forms/register.php">Register</a>
 </body>
 </html>
