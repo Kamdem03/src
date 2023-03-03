@@ -23,7 +23,7 @@ if(isset($_POST['login'])){
     }
 
     $user->login($email, $pasword);
-    echo exit();
+    exit();
 
 }
 

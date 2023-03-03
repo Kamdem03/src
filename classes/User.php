@@ -1,7 +1,6 @@
 <?php
 
 include_once '../src/dbconnection.php';
-session_start();
 class User {
     //some logic
 
@@ -18,7 +17,7 @@ class User {
                     $emmail=$row['email'];
                     $_SESSION['name']=$row['name'];
 
-                    header("Location: dash.php");
+                    header("Location:../src/dash.php");
                 }
                 else{
                     header("Location: ../src/forms/login.php");
@@ -41,7 +40,7 @@ class User {
       //insert user into database
       $stmt= "INSERT TO users (name,email,password) VALUES('$name','$password','$email')";
         if(mysqli($conn,$stmt)){
-            header("Location:dash.php");
+            header("Location:../src/dash.php");
         }else{
             header("Location:../src/forms/login.php");
         }
