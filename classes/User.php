@@ -18,7 +18,7 @@ class User {
                     $emmail=$row['email'];
                     $_SESSION['name']=$row['name'];
 
-                    header("Location: ../src/dashboard.php");
+                    header("Location: dash.php");
                 }
                 else{
                     header("Location: ../src/forms/login.php");
@@ -41,7 +41,7 @@ class User {
       //insert user into database
       $stmt= "INSERT TO users (name,email,password) VALUES('$name','$password','$email')";
         if(mysqli($conn,$stmt)){
-            header("Location:../src/dashboard.php");
+            header("Location:dash.php");
         }else{
             header("Location:../src/forms/login.php");
         }

@@ -19,7 +19,7 @@ if(isset($_POST['login'])){
         echo "Invalid email format";
     }
     else{
-        header("Locationn:../src/form/login.php?message=No user found");
+        header("Location:../src/form/login.php?message=No user found");
     }
 
     $user->login($email, $pasword);
@@ -42,9 +42,10 @@ elseif(isset($_POST['register'])){
     }
     else{
 
-        header("Locationn:../src/form/register.php");
+        header("Location:../src/form/register.php");
     }
 
     
-    $user->login($name, $email, $password);
+    $user->register($name, $email, $password);
 }
+?>
